@@ -21,3 +21,31 @@ Emitter.prototype.emit = function (type) {
 }
 
 module.exports = Emitter;
+
+// get to es6
+
+// class Emitter {
+//     constructor() {
+//         this.events = {};
+//     }
+//     on(type, listener) {
+//         this.events[type] = this.events[type] || [];
+//         this.events[type].push(listener);
+//     }
+//     emit(type) {
+//         if (this.events[type]) {
+//             this.events[type].forEach(function(listenerLoop) {
+//                 listenerLoop();
+//             });
+//             console.log("End loop");
+//         }
+//         else {
+//             console.log('Not Found');
+//         }
+//     }
+// }
+
+
+
+
+module.exports = Emitter;
